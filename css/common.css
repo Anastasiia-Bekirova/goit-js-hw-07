@@ -8,6 +8,20 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
 }
+button {
+  border-style: none;
+  border-radius: 8px;
+    padding: 8px 16px;
+    width: 86px;
+    height: 40px;
+    background: #4e75ff;
+    font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+}
 #categories {
   padding: 24px;
   display: block;
@@ -57,4 +71,31 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+}
+.gallery {
+  display: flex;
+  gap: 24px;
+  width: 1128px;
+  flex-wrap: wrap;
+}
+#name-input {
+  width: 360px;
+  height: 40px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+.change-color {
+  width: 148px;
+  height: 40px;
 }
