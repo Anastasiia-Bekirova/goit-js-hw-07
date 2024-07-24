@@ -10,26 +10,23 @@ const divControls = document.querySelector('#controls');
 
 
 const amount = divControls.childNodes[0].value;
-let htmlString = '';
+
 function createBoxes(amount) {
   const size = 30; 
+  let htmlString = '';
   for (let i = 0; i <= amount; i++){
-   `<div style = width:${size}px, height:${size}px, background-color:${getRandomHexColor}()></div>`;
+   htmlString += `<div style="width: 30px; height: 30px; background-color: ${getRandomHexColor()}"></div>`;
     size += 10;
   } 
-   divBoxes.innerHTML += htmlString ;
+   divBoxes.innerHTML = htmlString;
 }
 const destroyBoxes = () => {
   divBoxes.innerHTML = '';
 };
 const onBtnClick = () => {
-  if (amount <= 100) {
+  if (1 < amount <= 100) {
     createBoxes(amount);
 
-  }
-
-  if (amount > 100) {
-    createBtnEl.removeEventListener('click', onBtnClick);
   }
 };
 const onResetBtnClick = () => { 
